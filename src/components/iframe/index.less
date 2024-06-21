@@ -1,0 +1,504 @@
+.mobile-box {
+  width: 100%;
+  height: 100%;
+}
+.mobile-box-row {
+  width: 100%;
+  height: 100%;
+}
+.mobile-box-dial {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 14px 15px 15px;
+  box-sizing: border-box;
+}
+.mobile-head {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 6px;
+  left: 0;
+  padding: 16px 15px 15px;
+  z-index: 998;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  .mobile-logo {
+    width: 104px;
+  }
+  .mobile-status {
+    padding: 6.5px 9px;
+    font-size: 12px;
+    border-radius: 50px;
+    img,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      width: 14px;
+    }
+  }
+  .mobile-status-sus {
+    color: #0fd057;
+    background-color: rgba(15, 208, 87, 0.1);
+  }
+  .mobile-status-fail {
+    color: #ed9b20;
+    background-color: rgba(237, 155, 32, 0.1);
+  }
+}
+.mobile-dial-number {
+  width: 100%;
+  margin-top: 10px;
+  .number-input {
+    margin-bottom: 20px;
+    height: 32px;
+
+    .el-input__inner {
+      font-size: 23px;
+      text-align: center;
+    }
+  }
+
+  .mobile-number-circle {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    color: #dcdfe6;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    .number-content {
+      width: 100%;
+
+      h3 {
+        font-weight: 500;
+        font-size: 22px;
+        width: 100%;
+        color: #333333;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      p {
+        width: 100%;
+        font-size: 12px;
+        color: #333333;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .mobile-call-button {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .mobile-delete-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .delete-number {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 35px;
+      background-image: url("./img/delete.svg");
+      border: none;
+    }
+    .delete-number.ant-btn:empty {
+      visibility: unset;
+    }
+  }
+}
+.mobile-iframe-option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  .mobile-external {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .external-option-title {
+      width: 18%;
+      margin-right: 5%;
+      display: inline-block;
+      vertical-align: middle;
+      word-break: break-word;
+      color: #000000;
+      font-size: 14px;
+    }
+    .ant-select {
+      width: 77%;
+    }
+  }
+}
+
+// 通话中
+.mobile-calling {
+  width: 100%;
+  min-height: 100%;
+  background-image: url("./img/calling.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mobile-calling-box {
+  width: 100%;
+  padding-top: 25px;
+  .mobile-calling-number {
+    width: 100%;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+  }
+  .call-status {
+    width: 100%;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .open-dial {
+    width: 120px;
+    height: 42px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 43.5px;
+    text-align: center;
+    line-height: 43px;
+    margin-top: 90px;
+    img {
+      width: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+  .hangupBtn {
+    width: 44px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.mobileCalling {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.callLogs {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+}
+.mobile-tab {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  .mobile-list {
+    width: 100%;
+    height: 100%;
+    line-height: 39px;
+    text-align: center;
+    img {
+      width: 20px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+    p {
+      width: 100%;
+      font-size: 10px;
+      color: #666666;
+      line-height: 12px;
+      display: inline-block;
+    }
+    p.act {
+      color: #00a062;
+    }
+  }
+}
+.number-input-mobile {
+  .el-input-group__prepend {
+    width: 40%;
+  }
+}
+.mobile-country {
+  height: 100%;
+
+  .select-trigger {
+    height: 100%;
+    .el-input {
+      height: 100%;
+      .el-input__wrapper {
+        padding: 1px 8px;
+      }
+      .el-input__inner {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.numberRow {
+  position: relative;
+  .isMic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.mobile-dial-compact {
+  margin-bottom: 16px;
+  height: 32px;
+  .ant-select-selector,
+  .ant-select-selection-search-input {
+    height: 100% !important;
+  }
+  .ant-select-selection-item {
+    line-height: 32px !important;
+  }
+  .ant-select-selection-placeholder {
+    height: 100% !important;
+    line-height: 32px !important;
+  }
+}
+#callPhoneId {
+  font-size: 14px;
+  text-align: center;
+  color: #333333;
+}
+.system_change_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google_title {
+  width: 100%;
+  margin-bottom: 16px;
+  img {
+    width: 16px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    font-size: 14px;
+    color: #333333;
+    line-height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.google_welcome {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #333333;
+  line-height: 37.5px;
+  margin-bottom: 32px;
+}
+.mobile-change-status {
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  padding: 4px 9px;
+  .ant-badge-status-text {
+    font-size: 12px;
+  }
+}
+// 媒体查询
+@media screen and (min-width: 501px) {
+  /* 在屏幕宽度大于 500px 时应用的样式 */
+  .mobile-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fbf9;
+    position: absolute;
+  }
+  .mobile-box-row {
+    width: 300px;
+    height: 500px;
+    position: relative;
+  }
+  .mobile-box-dial {
+    border-radius: 8px 8px 0 0;
+    box-sizing: border-box;
+  }
+  .mobile-head {
+    position: static;
+    padding: 8px 0;
+  }
+  .mobile-iframe-option {
+    margin-top: 0;
+  }
+  .mobile-tab {
+    width: 100%;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+  }
+  .mobile-head {
+    .mobile-status {
+      .mobile-not-right {
+        margin-right: 0;
+      }
+    }
+  }
+  .mobile-change-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    border: 1px solid #eee;
+    padding: 4px 12px;
+    border-radius: 22px;
+  }
+  .mobileCalling {
+    position: absolute;
+  }
+  .mobile-calling {
+    border-radius: 8px;
+  }
+  .mobile-calling-box {
+    padding-bottom: 15px;
+
+    .hangupBtn {
+      // margin: 0 20px;
+    }
+    .open-dial {
+      margin-bottom: 30px;
+    }
+  }
+  .number-pad {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .pc-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    .mobile-logo {
+      width: 104px;
+    }
+  }
+  .mobile-iframe-option {
+    .mobile-external {
+      width: 100%;
+      .external-option-title {
+        width: 18%;
+      }
+      .ant-select {
+        width: 77%;
+      }
+    }
+  }
+  .ant-input-group.ant-input-group-compact > *:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .ant-input-group.ant-input-group-compact
+    > .ant-select:first-child
+    > .ant-select-selector {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+.iframe-login-info {
+  .ant-input-group {
+    height: 38px;
+    border: 1px solid #e4e7e9;
+    border-radius: 12px;
+    overflow: hidden;
+    .ant-input {
+      height: 100%;
+      border: none;
+      font-size: 14px;
+    }
+    .ant-input-affix-wrapper {
+      height: 100%;
+      border: none;
+    }
+    .ant-input-group-addon {
+      border: none;
+    }
+  }
+}
+.iframe_google_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .iframe_google_content_flex {
+    width: 100%;
+    .submitLogin {
+      width: 100%;
+      height: 38px;
+      font-size: 14px;
+      margin-bottom: 16px;
+      margin-top: 16px;
+      border-radius: 8px;
+    }
+  }
+}
+.diar_change_rel {
+  position: relative;
+  .frame_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
